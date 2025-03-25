@@ -1,8 +1,47 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 
 export default function FinancialGrowthTemplate() {
+
+
+  const testimonials = [
+    {
+      quote: "FinanceGrowth transformed our company's financial strategy completely. Their expert guidance on investment allocation and tax optimization resulted in a 32% increase in our capital efficiency within just six months.",
+      name: "Sarah Johnson",
+      designation: "CEO, TechVentures",
+      gender: "female" as const, // Specify female for appropriate image
+    },
+    {
+      quote: "As a small business owner, I was struggling to manage my finances efficiently. The team at FinanceGrowth provided me with personalized strategies that helped me increase my profit margins and secure my financial future.",
+      name: "Michael Chen",
+      designation: "Small Business Owner",
+      gender: "male" as const, // Specify male for appropriate image
+    },
+    {
+      quote: "The investment strategies recommended by FinanceGrowth have given us exceptional returns even during market downturns. Their risk management approach is both innovative and reliable.",
+      name: "Emma Rodriguez",
+      designation: "Director of Operations, GreenTech",
+      gender: "female" as const,
+    },
+    {
+      quote: "I've worked with many financial consultants over my 25-year career, but FinanceGrowth stands out for their commitment to client success and innovative approach to wealth management.",
+      name: "David Patel",
+      designation: "Retirement Planner",
+      gender: "male" as const,
+    },
+    {
+      quote: "Their goal-based investment approach helped me diversify my portfolio beyond real estate. I've seen a 28% growth in my investments over the past year, which exceeded my expectations.",
+      name: "Lisa Thompson",
+      designation: "Real Estate Investor",
+      gender: "female" as const,
+    }
+  ];
+
+
+
+
   return (
     <div className="min-h-screen bg-gray-100 font-sans">
       {/* Header/Navigation */}
@@ -65,593 +104,948 @@ export default function FinancialGrowthTemplate() {
           </div>
         </div>
       </header>
-      {/* Hero Section */}
-      <section className="py-16 md:py-24 px-6 md:px-16 bg-gray-100">
-        <div className="container mx-auto">
-          <div className="flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2 mb-12 md:mb-0">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6">
-                Your Trusted Partner in Financial Growth
-              </h2>
-              <p className="text-lg text-gray-600 mb-8 max-w-xl">
-                Our goal is to empower clients with the knowledge, strategies,
-                and tools they need to make informed decisions and achieve
-                long-term financial success.
-              </p>
-              <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                <button className="bg-lime-500 text-gray-800 font-medium px-8 py-3 rounded-full hover:bg-lime-600 transition flex items-center">
-                  Contact Us
-                  <svg
-                    className="w-5 h-5 ml-2"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    />
-                  </svg>
-                </button>
-                <button className="border-2 border-gray-300 text-gray-800 font-medium px-8 py-3 rounded-full hover:bg-gray-200 transition flex items-center">
-                  Learn more
-                  <svg
-                    className="w-5 h-5 ml-2"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    />
-                  </svg>
-                </button>
+ {/* Hero Section for Client-Facing MFD Website */}
+<section className="py-16 md:py-24 px-6 md:px-16 bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200">
+  <div className="container mx-auto">
+    <div className="flex flex-col md:flex-row items-center">
+      <div className="md:w-1/2 mb-12 md:mb-0">
+        <div className="mb-4">
+          <span className="bg-lime-100 text-lime-800 text-sm font-medium px-4 py-1.5 rounded-full">AMFI Registered Mutual Fund Distributor</span>
+        </div>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6">
+          Your Trusted Partner for <span className="text-lime-600">Wealth Creation</span>
+        </h1>
+        <p className="text-lg text-gray-600 mb-8 max-w-xl">
+          We help you navigate the world of mutual funds with personalized investment strategies tailored to your financial goals, risk tolerance, and time horizon.
+        </p>
+        <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+          <button className="bg-lime-500 text-gray-800 font-medium px-8 py-3 rounded-full hover:bg-lime-600 transition flex items-center">
+            Start Investing
+            <svg
+              className="w-5 h-5 ml-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              />
+            </svg>
+          </button>
+          <button className="border-2 border-gray-300 text-gray-800 font-medium px-8 py-3 rounded-full hover:bg-gray-200 transition flex items-center">
+            Schedule Consultation
+            <svg
+              className="w-5 h-5 ml-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+              />
+            </svg>
+          </button>
+        </div>
+        
+        {/* Client benefits quick highlights */}
+        <div className="mt-10 grid grid-cols-2 gap-4">
+          <div className="flex items-center">
+            <div className="flex-shrink-0 bg-white p-2 rounded-full shadow-sm">
+              <svg className="w-5 h-5 text-lime-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <p className="ml-3 text-sm text-gray-600">Personalized strategy</p>
+          </div>
+          <div className="flex items-center">
+            <div className="flex-shrink-0 bg-white p-2 rounded-full shadow-sm">
+              <svg className="w-5 h-5 text-lime-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <p className="ml-3 text-sm text-gray-600">Zero additional fees</p>
+          </div>
+          <div className="flex items-center">
+            <div className="flex-shrink-0 bg-white p-2 rounded-full shadow-sm">
+              <svg className="w-5 h-5 text-lime-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <p className="ml-3 text-sm text-gray-600">Goal-based planning</p>
+          </div>
+          <div className="flex items-center">
+            <div className="flex-shrink-0 bg-white p-2 rounded-full shadow-sm">
+              <svg className="w-5 h-5 text-lime-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <p className="ml-3 text-sm text-gray-600">Regular portfolio reviews</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="md:w-1/2 relative">
+        {/* Investment growth visualization */}
+        <div className="bg-white p-6 rounded-3xl shadow-xl relative z-10 md:ml-12">
+          <div className="absolute top-0 right-0 bg-lime-400 text-gray-800 rounded-full p-2 transform translate-x-1/4 -translate-y-1/4">
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 10l7-7m0 0l7 7m-7-7v18"
+              />
+            </svg>
+          </div>
+          
+          {/* Investment Growth preview */}
+          <div className="mb-4 flex justify-between items-center">
+            <span className="font-bold text-gray-800 text-lg">Your Investment Growth</span>
+            <div className="flex items-center text-sm text-gray-600">
+              <span className="text-lime-600 font-medium">Sample 5-year performance</span>
+              <svg
+                className="w-4 h-4 ml-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+          </div>
+          
+          {/* Main chart */}
+          <div className="bg-gray-900 rounded-xl p-4">
+            <div className="flex justify-between text-xs text-gray-400 mb-2">
+              <span>Returns over time</span>
+              <div className="flex space-x-2">
+                <div className="flex items-center">
+                  <div className="w-2 h-2 bg-lime-400 rounded-full mr-1"></div>
+                  <span>Aggressive Portfolio</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full mr-1"></div>
+                  <span>Conservative Portfolio</span>
+                </div>
               </div>
             </div>
-
-            <div className="md:w-1/2 relative">
-              <div className="bg-white p-6 rounded-3xl shadow-lg relative z-10 md:ml-12">
-                <div className="absolute top-0 right-0 bg-lime-400 text-gray-800 rounded-full p-2 transform translate-x-1/4 -translate-y-1/4">
-                  <svg
-                    className="w-5 h-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 10l7-7m0 0l7 7m-7-7v18"
-                    />
-                  </svg>
-                </div>
-                <div className="flex items-center justify-center">
-                  <div className="w-full">
-                    <div className="flex justify-between items-center mb-4">
-                      <span className="font-semibold text-gray-800">
-                        Revenue
-                      </span>
-                      <div className="flex items-center text-sm text-gray-600">
-                        weekly
-                        <svg
-                          className="w-4 h-4 ml-1"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M19 9l-7 7-7-7"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div className="bg-gray-900 rounded-xl p-4">
-                      <div className="h-32 flex items-end space-x-2">
-                        <div
-                          className="w-1/6 bg-lime-400 rounded-t-md"
-                          style={{ height: "60%" }}
-                        ></div>
-                        <div
-                          className="w-1/6 bg-lime-400 rounded-t-md"
-                          style={{ height: "45%" }}
-                        ></div>
-                        <div
-                          className="w-1/6 bg-lime-400 rounded-t-md"
-                          style={{ height: "85%" }}
-                        ></div>
-                        <div
-                          className="w-1/6 bg-lime-400 rounded-t-md"
-                          style={{ height: "50%" }}
-                        ></div>
-                        <div
-                          className="w-1/6 bg-lime-400 rounded-t-md"
-                          style={{ height: "65%" }}
-                        ></div>
-                        <div
-                          className="w-1/6 bg-lime-400 rounded-t-md"
-                          style={{ height: "75%" }}
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div className="relative h-40">
+              {/* Conservative portfolio line */}
+              <svg className="w-full h-full" viewBox="0 0 320 160" preserveAspectRatio="none">
+                <path 
+                  d="M0,140 C20,130 40,135 60,125 C80,115 100,110 120,105 C140,100 160,95 180,90 C200,85 220,80 240,75 C260,70 280,65 300,60 L300,160 L0,160 Z" 
+                  fill="rgba(96, 165, 250, 0.3)" 
+                  stroke="rgba(96, 165, 250, 0.8)" 
+                  strokeWidth="2"
+                />
+              </svg>
+              
+              {/* Aggressive portfolio line (overlayed) */}
+              <svg className="absolute inset-0 w-full h-full" viewBox="0 0 320 160" preserveAspectRatio="none">
+                <path 
+                  d="M0,140 C20,125 40,110 60,100 C80,90 100,80 120,70 C140,60 160,55 180,45 C200,35 220,30 240,25 C260,20 280,15 300,10" 
+                  fill="none" 
+                  stroke="rgba(163, 230, 53, 0.8)" 
+                  strokeWidth="2"
+                />
+              </svg>
+              
+              {/* Year markers */}
+              <div className="absolute bottom-0 left-0 right-0 flex justify-between text-xs text-gray-400 px-2">
+                <span>2023</span>
+                <span>2024</span>
+                <span>2025</span>
+                <span>2026</span>
+                <span>2027</span>
+                <span>2028</span>
               </div>
-
-              <div className="absolute top-1/2 left-0 transform -translate-y-1/2 w-64 h-64 bg-lime-200 rounded-full -z-10 opacity-60 blur-xl"></div>
-              <div className="absolute bottom-0 right-0 w-40 h-40 bg-lime-300 rounded-full -z-10 opacity-70 blur-lg"></div>
+            </div>
+          </div>
+          
+          {/* Investment options */}
+          <div className="grid grid-cols-3 gap-4 mt-4">
+            <div className="bg-gray-100 rounded-lg p-3">
+              <div className="text-xs text-gray-500">SIP Starting at</div>
+              <div className="text-lg font-bold text-gray-800">₹1,000</div>
+              <div className="text-xs text-gray-600">Monthly investment</div>
+            </div>
+            <div className="bg-gray-100 rounded-lg p-3">
+              <div className="text-xs text-gray-500">Potential Returns</div>
+              <div className="text-lg font-bold text-gray-800">12-15%</div>
+              <div className="text-xs text-gray-600">Historical CAGR</div>
+            </div>
+            <div className="bg-gray-100 rounded-lg p-3">
+              <div className="text-xs text-gray-500">Tax Benefits</div>
+              <div className="text-lg font-bold text-gray-800">Up to ₹1.5L</div>
+              <div className="text-xs text-gray-600">Under Sec 80C</div>
             </div>
           </div>
         </div>
-      </section>
-      {/* Analytics Cards Section */}
-      <section className="py-16 px-6 md:px-16 bg-gray-100">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Growth Analytics Card */}
-            <div className="bg-white rounded-3xl shadow-md p-6 relative overflow-hidden">
-              <div className="flex justify-between items-center mb-4">
-                <h3 className="text-xl font-semibold text-gray-800">
-                  Growth analytics
-                </h3>
-                <button className="text-gray-400 hover:text-gray-600">
-                  <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                    />
-                  </svg>
-                </button>
-              </div>
 
-              <div className="mb-6">
-                <span className="text-4xl font-bold text-gray-800">
-                  $980.75
-                </span>
-              </div>
+        {/* Decorative elements */}
+        <div className="absolute top-1/2 left-0 transform -translate-y-1/2 w-64 h-64 bg-lime-200 rounded-full -z-10 opacity-60 blur-xl"></div>
+        <div className="absolute bottom-0 right-0 w-40 h-40 bg-lime-300 rounded-full -z-10 opacity-70 blur-lg"></div>
+        <div className="absolute top-0 right-1/4 w-20 h-20 bg-blue-200 rounded-full -z-10 opacity-60 blur-md"></div>
+      </div>
+    </div>
+  </div>
+</section>
+      {/* Investment Insights Section */}
+<section className="py-16 px-6 md:px-16 bg-gray-50">
+  <div className="container mx-auto">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+        Investment Insights & Performance
+      </h2>
+      <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        Track how various investment strategies have performed and get insights to make better financial decisions.
+      </p>
+    </div>
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* Fund Performance Card */}
+      <div className="bg-white rounded-3xl shadow-md p-6 relative overflow-hidden">
+        <div className="flex justify-between items-center mb-4">
+          <h3 className="text-xl font-semibold text-gray-800">
+            Top Fund Performance
+          </h3>
+          <div className="bg-lime-100 text-lime-800 text-xs px-2 py-1 rounded-full">
+            Last 12 months
+          </div>
+        </div>
 
-              <div className="grid grid-cols-6 gap-2 mb-2">
-                <div className="flex flex-col items-center">
-                  <div className="w-full h-28 bg-gray-200 rounded-md relative overflow-hidden">
-                    <div
-                      className="absolute bottom-0 w-full bg-gray-800 rounded-md"
-                      style={{ height: "40%" }}
-                    ></div>
-                  </div>
-                  <span className="text-xs text-gray-600 mt-1">Mon</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <div className="w-full h-28 bg-gray-200 rounded-md relative overflow-hidden">
-                    <div
-                      className="absolute bottom-0 w-full bg-gray-800 rounded-md"
-                      style={{ height: "32%" }}
-                    ></div>
-                  </div>
-                  <span className="text-xs text-gray-600 mt-1">Tue</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <div className="w-full h-28 bg-gray-200 rounded-md relative overflow-hidden">
-                    <div
-                      className="absolute bottom-0 w-full bg-lime-400 rounded-md"
-                      style={{ height: "85%" }}
-                    ></div>
-                    <span className="absolute top-1 left-0 right-0 text-center text-xs font-medium">
-                      85%
-                    </span>
-                  </div>
-                  <span className="text-xs text-gray-600 mt-1">Wed</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <div className="w-full h-28 bg-gray-200 rounded-md relative overflow-hidden">
-                    <div
-                      className="absolute bottom-0 w-full bg-gray-800 rounded-md"
-                      style={{ height: "45%" }}
-                    ></div>
-                  </div>
-                  <span className="text-xs text-gray-600 mt-1">Thu</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <div className="w-full h-28 bg-gray-200 rounded-md relative overflow-hidden">
-                    <div
-                      className="absolute bottom-0 w-full bg-gray-800 rounded-md"
-                      style={{ height: "55%" }}
-                    ></div>
-                  </div>
-                  <span className="text-xs text-gray-600 mt-1">Fri</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <div className="w-full h-28 bg-gray-200 rounded-md relative overflow-hidden">
-                    <div
-                      className="absolute bottom-0 w-full bg-gray-800 rounded-md"
-                      style={{ height: "65%" }}
-                    ></div>
-                  </div>
-                  <span className="text-xs text-gray-600 mt-1">Sat</span>
-                </div>
-              </div>
+        <div className="mb-6">
+          <span className="text-4xl font-bold text-gray-800">
+            18.4%
+          </span>
+          <span className="text-sm text-gray-500 ml-2">
+            avg. return
+          </span>
+        </div>
+
+        <div className="grid grid-cols-6 gap-2 mb-2">
+          <div className="flex flex-col items-center">
+            <div className="w-full h-28 bg-gray-100 rounded-md relative overflow-hidden">
+              <div
+                className="absolute bottom-0 w-full bg-gray-800 rounded-md"
+                style={{ height: "40%" }}
+              ></div>
             </div>
-
-            {/* Economy Card */}
-            <div className="bg-white rounded-3xl shadow-md p-6 relative overflow-hidden">
-              <div className="flex justify-between items-center mb-4">
-                <h3 className="text-xl font-semibold text-gray-800">Economy</h3>
-                <button className="text-gray-400 hover:text-gray-600">
-                  <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                    />
-                  </svg>
-                </button>
-              </div>
-
-              <div className="flex justify-center mb-6">
-                <div className="relative w-48 h-48">
-                  {/* Circle chart background */}
-                  <svg className="w-full h-full" viewBox="0 0 100 100">
-                    <circle
-                      cx="50"
-                      cy="50"
-                      r="45"
-                      fill="none"
-                      stroke="#f0f0f0"
-                      strokeWidth="10"
-                    />
-                    {/* Blue segment - 20% */}
-                    <circle
-                      cx="50"
-                      cy="50"
-                      r="45"
-                      fill="none"
-                      stroke="#4f7df3"
-                      strokeWidth="10"
-                      strokeDasharray="56.5 226"
-                      strokeDashoffset="0"
-                      strokeLinecap="round"
-                      transform="rotate(-90 50 50)"
-                    />
-                    {/* Green segment - 55% */}
-                    <circle
-                      cx="50"
-                      cy="50"
-                      r="45"
-                      fill="none"
-                      stroke="#a3e635"
-                      strokeWidth="10"
-                      strokeDasharray="155.5 226"
-                      strokeDashoffset="-56.5"
-                      strokeLinecap="round"
-                      transform="rotate(-90 50 50)"
-                    />
-                    {/* Orange segment - 20% */}
-                    <circle
-                      cx="50"
-                      cy="50"
-                      r="45"
-                      fill="none"
-                      stroke="#f97316"
-                      strokeWidth="10"
-                      strokeDasharray="70.5 226"
-                      strokeDashoffset="-212"
-                      strokeLinecap="round"
-                      transform="rotate(-90 50 50)"
-                    />
-                  </svg>
-
-                  <div className="absolute inset-0 flex flex-col items-center justify-center">
-                    <span className="text-3xl font-bold text-gray-800">
-                      95%
-                    </span>
-                    <span className="text-sm text-gray-500">Total points</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex justify-around">
-                <div className="flex items-center">
-                  <div className="w-3 h-3 rounded-full bg-lime-400 mr-2"></div>
-                  <span className="text-sm text-gray-600">High</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-3 h-3 rounded-full bg-blue-500 mr-2"></div>
-                  <span className="text-sm text-gray-600">Low</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-3 h-3 rounded-full bg-orange-500 mr-2"></div>
-                  <span className="text-sm text-gray-600">Mean</span>
-                </div>
-              </div>
+            <span className="text-xs text-gray-600 mt-1">Debt</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="w-full h-28 bg-gray-100 rounded-md relative overflow-hidden">
+              <div
+                className="absolute bottom-0 w-full bg-gray-800 rounded-md"
+                style={{ height: "52%" }}
+              ></div>
             </div>
+            <span className="text-xs text-gray-600 mt-1">Hybrid</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="w-full h-28 bg-gray-100 rounded-md relative overflow-hidden">
+              <div
+                className="absolute bottom-0 w-full bg-lime-400 rounded-md"
+                style={{ height: "85%" }}
+              ></div>
+              <span className="absolute top-1 left-0 right-0 text-center text-xs font-medium">
+                85%
+              </span>
+            </div>
+            <span className="text-xs text-gray-600 mt-1">Large</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="w-full h-28 bg-gray-100 rounded-md relative overflow-hidden">
+              <div
+                className="absolute bottom-0 w-full bg-gray-800 rounded-md"
+                style={{ height: "65%" }}
+              ></div>
+            </div>
+            <span className="text-xs text-gray-600 mt-1">Mid</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="w-full h-28 bg-gray-100 rounded-md relative overflow-hidden">
+              <div
+                className="absolute bottom-0 w-full bg-gray-800 rounded-md"
+                style={{ height: "55%" }}
+              ></div>
+            </div>
+            <span className="text-xs text-gray-600 mt-1">Small</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="w-full h-28 bg-gray-100 rounded-md relative overflow-hidden">
+              <div
+                className="absolute bottom-0 w-full bg-gray-800 rounded-md"
+                style={{ height: "72%" }}
+              ></div>
+            </div>
+            <span className="text-xs text-gray-600 mt-1">Intl</span>
+          </div>
+        </div>
+        
+        <div className="mt-4 text-sm text-gray-500">
+          Large-cap funds showed strongest performance, outperforming market indices by 6.2%
+        </div>
+      </div>
 
-            {/* Profit Value Card */}
-            <div className="bg-white rounded-3xl shadow-md p-6 relative overflow-hidden">
-              <div className="flex justify-between items-center mb-6">
-                <h3 className="text-xl font-semibold text-gray-800">
-                  Profit value
-                </h3>
-                <button className="text-gray-400 hover:text-gray-600">
-                  <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-                    />
-                  </svg>
-                </button>
-              </div>
+      {/* Asset Allocation Card */}
+      <div className="bg-white rounded-3xl shadow-md p-6 relative overflow-hidden">
+        <div className="flex justify-between items-center mb-4">
+          <h3 className="text-xl font-semibold text-gray-800">Recommended Allocation</h3>
+          <div className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
+            Balanced Growth
+          </div>
+        </div>
 
-              <div className="space-y-4">
-                <div className="bg-lime-400 rounded-full px-4 py-3 flex justify-between items-center">
-                  <span className="font-semibold text-gray-800">75%</span>
-                  <svg
-                    className="w-5 h-5 text-gray-800"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </div>
+        <div className="flex justify-center mb-6">
+          <div className="relative w-48 h-48">
+            {/* Circle chart background */}
+            <svg className="w-full h-full" viewBox="0 0 100 100">
+              <circle
+                cx="50"
+                cy="50"
+                r="45"
+                fill="none"
+                stroke="#f0f0f0"
+                strokeWidth="10"
+              />
+              {/* Equity segment - 60% */}
+              <circle
+                cx="50"
+                cy="50"
+                r="45"
+                fill="none"
+                stroke="#a3e635"
+                strokeWidth="10"
+                strokeDasharray="169.6 226"
+                strokeDashoffset="0"
+                strokeLinecap="round"
+                transform="rotate(-90 50 50)"
+              />
+              {/* Debt segment - 30% */}
+              <circle
+                cx="50"
+                cy="50"
+                r="45"
+                fill="none"
+                stroke="#4f7df3"
+                strokeWidth="10"
+                strokeDasharray="84.8 226"
+                strokeDashoffset="-169.6"
+                strokeLinecap="round"
+                transform="rotate(-90 50 50)"
+              />
+              {/* Gold & Alternatives - 10% */}
+              <circle
+                cx="50"
+                cy="50"
+                r="45"
+                fill="none"
+                stroke="#f97316"
+                strokeWidth="10"
+                strokeDasharray="28.3 226"
+                strokeDashoffset="-254.4"
+                strokeLinecap="round"
+                transform="rotate(-90 50 50)"
+              />
+            </svg>
 
-                <div className="bg-gray-200 rounded-full px-4 py-3 flex justify-between items-center">
-                  <span className="font-semibold text-gray-800">66%</span>
-                  <svg
-                    className="w-5 h-5 text-gray-800"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </div>
-
-                <div className="bg-gray-200 rounded-full px-4 py-3 flex justify-between items-center">
-                  <span className="font-semibold text-gray-800">55%</span>
-                  <svg
-                    className="w-5 h-5 text-gray-800"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </div>
-              </div>
+            <div className="absolute inset-0 flex flex-col items-center justify-center">
+              <span className="text-3xl font-bold text-gray-800">
+                60/30
+              </span>
+              <span className="text-sm text-gray-500">Equity/Debt</span>
             </div>
           </div>
         </div>
-      </section>
-      {/* Features Section */}
-      <section className="py-16 px-6 md:px-16 bg-white">
-        <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              Comprehensive Financial Solutions
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We provide end-to-end financial services designed to maximize
-              growth and ensure long-term stability for businesses of all sizes.
-            </p>
+
+        <div className="flex justify-around">
+          <div className="flex items-center">
+            <div className="w-3 h-3 rounded-full bg-lime-400 mr-2"></div>
+            <span className="text-sm text-gray-600">Equity (60%)</span>
+          </div>
+          <div className="flex items-center">
+            <div className="w-3 h-3 rounded-full bg-blue-500 mr-2"></div>
+            <span className="text-sm text-gray-600">Debt (30%)</span>
+          </div>
+          <div className="flex items-center">
+            <div className="w-3 h-3 rounded-full bg-orange-500 mr-2"></div>
+            <span className="text-sm text-gray-600">Gold (10%)</span>
+          </div>
+        </div>
+        
+        <div className="mt-4 text-sm text-gray-500">
+          Ideal for investors with 5-7 year time horizon and moderate risk profile
+        </div>
+      </div>
+
+      {/* SIP Growth Card */}
+      <div className="bg-white rounded-3xl shadow-md p-6 relative overflow-hidden">
+        <div className="flex justify-between items-center mb-6">
+          <h3 className="text-xl font-semibold text-gray-800">
+            SIP Growth Potential
+          </h3>
+          <div className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">
+            Power of compounding
+          </div>
+        </div>
+
+        <div className="mb-6 flex items-baseline">
+          <span className="text-4xl font-bold text-gray-800">₹24.6L</span>
+          <span className="text-sm text-gray-500 ml-2">in 10 years</span>
+        </div>
+
+        <div className="space-y-4">
+          <div className="bg-lime-400 rounded-full px-4 py-3 flex justify-between items-center">
+            <div>
+              <span className="font-semibold text-gray-800">₹5,000 monthly</span>
+              <span className="text-xs text-gray-700 ml-2">for 10 years</span>
+            </div>
+            <div className="flex items-center">
+              <span className="font-medium text-gray-800 mr-1">₹24.6L</span>
+              <svg
+                className="w-5 h-5 text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-gray-50 rounded-xl p-6 transition-all hover:shadow-md">
-              <div className="w-12 h-12 bg-lime-100 rounded-lg flex items-center justify-center mb-4">
-                <svg
-                  className="w-6 h-6 text-lime-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Financial Analysis
-              </h3>
-              <p className="text-gray-600">
-                In-depth assessment of your financial health with customized
-                reports and actionable insights to improve performance.
-              </p>
+          <div className="bg-gray-100 rounded-full px-4 py-3 flex justify-between items-center">
+            <div>
+              <span className="font-semibold text-gray-800">₹10,000 monthly</span>
+              <span className="text-xs text-gray-700 ml-2">for 10 years</span>
             </div>
-
-            <div className="bg-gray-50 rounded-xl p-6 transition-all hover:shadow-md">
-              <div className="w-12 h-12 bg-lime-100 rounded-lg flex items-center justify-center mb-4">
-                <svg
-                  className="w-6 h-6 text-lime-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Investment Strategy
-              </h3>
-              <p className="text-gray-600">
-                Strategic investment planning tailored to your risk tolerance
-                and growth objectives to maximize returns.
-              </p>
+            <div className="flex items-center">
+              <span className="font-medium text-gray-800 mr-1">₹49.3L</span>
+              <svg
+                className="w-5 h-5 text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
             </div>
+          </div>
 
-            <div className="bg-gray-50 rounded-xl p-6 transition-all hover:shadow-md">
-              <div className="w-12 h-12 bg-lime-100 rounded-lg flex items-center justify-center mb-4">
-                <svg
-                  className="w-6 h-6 text-lime-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Growth Planning
-              </h3>
-              <p className="text-gray-600">
-                Comprehensive growth strategies with realistic milestones and
-                measurable objectives to scale your business.
-              </p>
+          <div className="bg-gray-100 rounded-full px-4 py-3 flex justify-between items-center">
+            <div>
+              <span className="font-semibold text-gray-800">₹15,000 monthly</span>
+              <span className="text-xs text-gray-700 ml-2">for 10 years</span>
             </div>
-
-            <div className="bg-gray-50 rounded-xl p-6 transition-all hover:shadow-md">
-              <div className="w-12 h-12 bg-lime-100 rounded-lg flex items-center justify-center mb-4">
-                <svg
-                  className="w-6 h-6 text-lime-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Risk Management
-              </h3>
-              <p className="text-gray-600">
-                Proactive risk assessment and mitigation strategies to protect
-                your assets and ensure business continuity.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 rounded-xl p-6 transition-all hover:shadow-md">
-              <div className="w-12 h-12 bg-lime-100 rounded-lg flex items-center justify-center mb-4">
-                <svg
-                  className="w-6 h-6 text-lime-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Tax Optimization
-              </h3>
-              <p className="text-gray-600">
-                Strategic tax planning to minimize liabilities and maximize
-                retention through compliant optimization methods.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 rounded-xl p-6 transition-all hover:shadow-md">
-              <div className="w-12 h-12 bg-lime-100 rounded-lg flex items-center justify-center mb-4">
-                <svg
-                  className="w-6 h-6 text-lime-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Financial Reporting
-              </h3>
-              <p className="text-gray-600">
-                Clear, accurate, and timely financial reporting with meaningful
-                visualizations to track performance and inform decisions.
-              </p>
+            <div className="flex items-center">
+              <span className="font-medium text-gray-800 mr-1">₹73.9L</span>
+              <svg
+                className="w-5 h-5 text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
             </div>
           </div>
         </div>
-      </section>
+        
+        <div className="mt-4 text-sm text-gray-500">
+          Calculations based on 12% estimated annual returns
+        </div>
+      </div>
+    </div>
+    
+    <div className="text-center mt-10">
+      <button className="bg-lime-500 text-gray-800 font-medium px-8 py-3 rounded-full hover:bg-lime-600 transition inline-flex items-center">
+        Start Your Investment Journey
+        <svg
+          className="w-5 h-5 ml-2"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M14 5l7 7m0 0l-7 7m7-7H3"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+      {/* How It Works Section */}
+<section className="py-16 px-6 md:px-16 bg-gray-900 text-white">
+  <div className="container mx-auto">
+    <div className="text-center mb-16">
+      <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        How <span className="text-lime-500">it</span> works
+      </h2>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {/* Step 1 */}
+      <div className="flex flex-col items-center text-center">
+        <div className="relative mb-6">
+          <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center">
+            <svg 
+              className="w-10 h-10 text-gray-800" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" 
+              />
+            </svg>
+          </div>
+          <div className="absolute top-0 right-0 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">
+            01
+          </div>
+        </div>
+        <h3 className="text-xl font-semibold mb-3">Register</h3>
+        <p className="text-gray-300">
+          Register with FinanceGrowth using your mobile number and email ID.
+        </p>
+      </div>
+
+      {/* Arrow for desktop */}
+      <div className="hidden md:flex items-center justify-center">
+        <div className="w-full border-t-2 border-dashed border-gray-600 relative">
+          <div className="absolute right-0 -top-2.5 text-gray-600">
+            <svg 
+              className="w-6 h-6" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M14 5l7 7m0 0l-7 7m7-7H3" 
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      {/* Step 2 */}
+      <div className="flex flex-col items-center text-center">
+        <div className="relative mb-6">
+          <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center">
+            <svg 
+              className="w-10 h-10 text-gray-800" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" 
+              />
+            </svg>
+          </div>
+          <div className="absolute top-0 right-0 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">
+            02
+          </div>
+        </div>
+        <h3 className="text-xl font-semibold mb-3">Choose and Invest</h3>
+        <p className="text-gray-300">
+          Choose the best funds according to your risk profile and start investing hassle-free.
+        </p>
+      </div>
+
+      {/* Arrow for desktop */}
+      <div className="hidden md:flex items-center justify-center">
+        <div className="w-full border-t-2 border-dashed border-gray-600 relative">
+          <div className="absolute right-0 -top-2.5 text-gray-600">
+            <svg 
+              className="w-6 h-6" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M14 5l7 7m0 0l-7 7m7-7H3" 
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      {/* Step 3 */}
+      <div className="flex flex-col items-center text-center">
+        <div className="relative mb-6">
+          <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center">
+            <svg 
+              className="w-10 h-10 text-gray-800" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" 
+              />
+            </svg>
+          </div>
+          <div className="absolute top-0 right-0 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">
+            03
+          </div>
+        </div>
+        <h3 className="text-xl font-semibold mb-3">Watch It Grow</h3>
+        <p className="text-gray-300">
+          Sit back and watch your money work for you. Track all your family's portfolio from just one account.
+        </p>
+      </div>
+    </div>
+    {/* CTA Button */}
+    <div className="mt-16 text-center">
+      <button className="bg-lime-500 hover:bg-lime-600 text-gray-900 font-bold px-10 py-3 rounded-full transition duration-300">
+        Get Started Today
+      </button>
+    </div>
+  </div>
+</section>
+      {/* Services Section */}
+<section className="py-16 px-6 md:px-16 bg-gray-100">
+  <div className="container mx-auto">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+        Our Services
+      </h2>
+      <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        We provide a variety of financial services tailored to meet your investment needs and financial goals.
+      </p>
+      <div className="mt-4">
+        <h3 className="text-4xl font-bold">
+          <span className="text-gray-800">Services</span>{" "}
+          <span className="text-red-600">We Offer</span>
+        </h3>
+      </div>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* Mutual Funds */}
+      <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all">
+        <div className="flex items-start space-x-4 mb-4">
+          <div className="w-12 h-12 bg-lime-100 rounded-full flex items-center justify-center">
+            <svg 
+              className="w-6 h-6 text-lime-600" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" 
+              />
+            </svg>
+          </div>
+          <h3 className="text-xl font-semibold text-red-600">Mutual Funds</h3>
+        </div>
+        <p className="text-gray-600 mb-4">
+          A mutual fund is simply a financial intermediary that allows a group of investors to pool their money together with a predetermined investment objective.
+        </p>
+        <a href="#" className="flex items-center text-red-600 font-medium hover:text-red-800 transition">
+          Read more
+          <svg 
+            className="w-4 h-4 ml-1" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24" 
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth={2} 
+              d="M14 5l7 7m0 0l-7 7m7-7H3" 
+            />
+          </svg>
+        </a>
+      </div>
+
+      {/* Fixed Deposit */}
+      <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all">
+        <div className="flex items-start space-x-4 mb-4">
+          <div className="w-12 h-12 bg-lime-100 rounded-full flex items-center justify-center">
+            <svg 
+              className="w-6 h-6 text-lime-600" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" 
+              />
+            </svg>
+          </div>
+          <h3 className="text-xl font-semibold text-red-600">Fixed Deposit</h3>
+        </div>
+        <p className="text-gray-600 mb-4">
+          Fixed Deposits are one of the oldest and most common methods of investing. They offer a secure way to earn a fixed return over a specified period.
+        </p>
+        <a href="#" className="flex items-center text-red-600 font-medium hover:text-red-800 transition">
+          Read more
+          <svg 
+            className="w-4 h-4 ml-1" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24" 
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth={2} 
+              d="M14 5l7 7m0 0l-7 7m7-7H3" 
+            />
+          </svg>
+        </a>
+      </div>
+
+      {/* Life Insurance */}
+      <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all">
+        <div className="flex items-start space-x-4 mb-4">
+          <div className="w-12 h-12 bg-lime-100 rounded-full flex items-center justify-center">
+            <svg 
+              className="w-6 h-6 text-lime-600" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" 
+              />
+            </svg>
+          </div>
+          <h3 className="text-xl font-semibold text-red-600">Life Insurance</h3>
+        </div>
+        <p className="text-gray-600 mb-4">
+          Unexpected passing of an individual leaves a lot of void and the surviving members face financial challenges. Life insurance provides protection and security.
+        </p>
+        <a href="#" className="flex items-center text-red-600 font-medium hover:text-red-800 transition">
+          Read more
+          <svg 
+            className="w-4 h-4 ml-1" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24" 
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth={2} 
+              d="M14 5l7 7m0 0l-7 7m7-7H3" 
+            />
+          </svg>
+        </a>
+      </div>
+
+      {/* Health Insurance */}
+      <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all">
+        <div className="flex items-start space-x-4 mb-4">
+          <div className="w-12 h-12 bg-lime-100 rounded-full flex items-center justify-center">
+            <svg 
+              className="w-6 h-6 text-lime-600" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M19 14l-7 7m0 0l-7-7m7 7V3" 
+              />
+            </svg>
+          </div>
+          <h3 className="text-xl font-semibold text-red-600">Health Insurance</h3>
+        </div>
+        <p className="text-gray-600 mb-4">
+          With medical costs spiraling out of control and the increase in shift to lifestyle diseases, health insurance provides financial coverage for medical expenses.
+        </p>
+        <a href="#" className="flex items-center text-red-600 font-medium hover:text-red-800 transition">
+          Read more
+          <svg 
+            className="w-4 h-4 ml-1" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24" 
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth={2} 
+              d="M14 5l7 7m0 0l-7 7m7-7H3" 
+            />
+          </svg>
+        </a>
+      </div>
+
+      {/* PMS/AIF */}
+      <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all">
+        <div className="flex items-start space-x-4 mb-4">
+          <div className="w-12 h-12 bg-lime-100 rounded-full flex items-center justify-center">
+            <svg 
+              className="w-6 h-6 text-lime-600" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" 
+              />
+            </svg>
+          </div>
+          <h3 className="text-xl font-semibold text-red-600">PMS/AIF</h3>
+        </div>
+        <p className="text-gray-600 mb-4">
+          PMS is a customized and professionally managed investment vehicle that offers investors more flexibility in their portfolio management strategy.
+        </p>
+        <a href="#" className="flex items-center text-red-600 font-medium hover:text-red-800 transition">
+          Read more
+          <svg 
+            className="w-4 h-4 ml-1" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24" 
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth={2} 
+              d="M14 5l7 7m0 0l-7 7m7-7H3" 
+            />
+          </svg>
+        </a>
+      </div>
+
+      {/* Goal Based Investments */}
+      <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all">
+        <div className="flex items-start space-x-4 mb-4">
+          <div className="w-12 h-12 bg-lime-100 rounded-full flex items-center justify-center">
+            <svg 
+              className="w-6 h-6 text-lime-600" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" 
+              />
+            </svg>
+          </div>
+          <h3 className="text-xl font-semibold text-red-600">Goal Based Investments</h3>
+        </div>
+        <p className="text-gray-600 mb-4">
+          When it comes to investments, it is always better to determine and prioritize your financial goals to align your investment strategy accordingly.
+        </p>
+        <a href="#" className="flex items-center text-red-600 font-medium hover:text-red-800 transition">
+          Read more
+          <svg 
+            className="w-4 h-4 ml-1" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24" 
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path 
+              strokeLinecap="round" 
+              strokeLinejoin="round" 
+              strokeWidth={2} 
+              d="M14 5l7 7m0 0l-7 7m7-7H3" 
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+   <AnimatedTestimonials testimonials={testimonials} autoplay={true} />
       {/* Call to Action Section */}
       <section className="py-16 px-6 md:px-16 bg-gray-900 text-white">
         <div className="container mx-auto">
