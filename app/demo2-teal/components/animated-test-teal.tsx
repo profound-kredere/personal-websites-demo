@@ -12,7 +12,7 @@ type Testimonial = {
   seed?: string;               // Optional seed for consistent image
 };
 
-export const AnimatedTestimonials = ({
+export const AnimatedTestimonials2 = ({
   testimonials,
   autoplay = true,
 }: {
@@ -75,13 +75,13 @@ export const AnimatedTestimonials = ({
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-20 bg-gradient-to-b from-gray-900 to-gray-800">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Client <span className="text-lime-500">Success</span> Stories
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Client <span className="text-teal-400">Success</span> Stories
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Don't just take our word for it. See the impact our financial solutions have made for our clients.
           </p>
         </div>
@@ -92,8 +92,8 @@ export const AnimatedTestimonials = ({
             <div className="relative">
               <div className="relative h-96 w-full">
                 {/* Background decorative elements */}
-                <div className="absolute -top-6 -left-6 w-32 h-32 bg-lime-100 rounded-full opacity-70 z-0"></div>
-                <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-lime-200 rounded-full opacity-60 z-0"></div>
+                <div className="absolute -top-6 -left-6 w-32 h-32 bg-teal-900/30 rounded-full opacity-70 z-0"></div>
+                <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-teal-900/20 rounded-full opacity-60 z-0"></div>
                 
                 <div className="absolute inset-0 shadow-2xl rounded-3xl overflow-hidden z-10">
                   <AnimatePresence>
@@ -146,7 +146,7 @@ export const AnimatedTestimonials = ({
                     key={index}
                     onClick={() => setActive(index)}
                     className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                      isActive(index) ? "bg-lime-500 scale-125" : "bg-gray-300"
+                      isActive(index) ? "bg-teal-500 scale-125" : "bg-gray-600"
                     }`}
                     aria-label={`Go to testimonial ${index + 1}`}
                   />
@@ -156,9 +156,9 @@ export const AnimatedTestimonials = ({
 
             {/* Testimonial Content */}
             <div className="flex flex-col justify-center">
-              <div className="bg-white rounded-3xl shadow-lg p-8 relative">
+              <div className="bg-gray-800 rounded-3xl shadow-lg p-8 relative border border-gray-700">
                 {/* Quote icon */}
-                <div className="absolute -top-5 -left-5 bg-lime-500 text-white p-3 rounded-full shadow-md">
+                <div className="absolute -top-5 -left-5 bg-teal-600 text-white p-3 rounded-full shadow-md">
                   <svg 
                     className="w-6 h-6" 
                     fill="currentColor" 
@@ -189,7 +189,7 @@ export const AnimatedTestimonials = ({
                   }}
                   className="mt-6"
                 >
-                  <motion.p className="text-xl text-gray-700 italic leading-relaxed">
+                  <motion.p className="text-xl text-gray-200 italic leading-relaxed">
                     {testimonials[active].quote.split(" ").map((word, index) => (
                       <motion.span
                         key={index}
@@ -215,12 +215,12 @@ export const AnimatedTestimonials = ({
                     ))}
                   </motion.p>
                   
-                  <div className="mt-8 flex items-center border-t border-gray-100 pt-4">
+                  <div className="mt-8 flex items-center border-t border-gray-700 pt-4">
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold text-gray-800">
+                      <h3 className="text-xl font-bold text-white">
                         {testimonials[active].name}
                       </h3>
-                      <p className="text-gray-500">
+                      <p className="text-teal-400">
                         {testimonials[active].designation}
                       </p>
                     </div>
@@ -228,7 +228,7 @@ export const AnimatedTestimonials = ({
                     <div className="flex space-x-3">
                       <button
                         onClick={handlePrev}
-                        className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 text-gray-800 hover:bg-lime-100 transition-colors duration-300"
+                        className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-700 text-white hover:bg-teal-800 transition-colors duration-300"
                         aria-label="Previous testimonial"
                       >
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -237,7 +237,7 @@ export const AnimatedTestimonials = ({
                       </button>
                       <button
                         onClick={handleNext}
-                        className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 text-gray-800 hover:bg-lime-100 transition-colors duration-300"
+                        className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-700 text-white hover:bg-teal-800 transition-colors duration-300"
                         aria-label="Next testimonial"
                       >
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -256,4 +256,4 @@ export const AnimatedTestimonials = ({
   );
 };
 
-export default AnimatedTestimonials;
+export default AnimatedTestimonials2;
