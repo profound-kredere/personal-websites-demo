@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function GreenProfessionalTemplate() {
   return (
@@ -124,7 +122,7 @@ export default function GreenProfessionalTemplate() {
                 dedicated his career to advancing the field of neurosurgery and
                 improving patient outcomes. With a compassionate approach and
                 commitment to innovative techniques, he provides exceptional
-                surgical care tailored to each patient's unique condition.
+                surgical care tailored to each patient&apos;s unique condition.
               </p>
               <p className="text-lg text-gray-700 mb-6">
                 After graduating with distinction from Johns Hopkins School of
@@ -203,7 +201,7 @@ export default function GreenProfessionalTemplate() {
                 dedicated his career to advancing the field of neurosurgery and
                 improving patient outcomes. With a compassionate approach and
                 commitment to innovative techniques, he provides exceptional
-                surgical care tailored to each patient's unique condition.
+                surgical care tailored to each patient&apos;s unique condition.
               </p>
               <p className="text-lg text-gray-700 mb-6">
                 After graduating with distinction from Johns Hopkins School of
@@ -489,7 +487,7 @@ export default function GreenProfessionalTemplate() {
                   <p className="text-gray-600 mb-3">Neurology, 2023</p>
                   <p className="text-gray-700">
                     Multi-center study evaluating the efficacy and safety of DBS
-                    for Parkinson's disease and essential tremor.
+                    for Parkinson&apos;s disease and essential tremor.
                   </p>
                 </div>
 
@@ -525,13 +523,13 @@ export default function GreenProfessionalTemplate() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-emerald-700 p-6 rounded-lg relative">
               <div className="absolute -top-4 left-6 text-emerald-300 text-5xl">
-                "
+                &quot;
               </div>
               <p className="text-emerald-100 italic mt-4 mb-6">
-                Dr. Richardson's expertise and calm demeanor gave me confidence
-                during a very difficult time. His surgical skill and attention
-                to detail resulted in an outcome far better than I had hoped
-                for.
+                Dr. Richardson&apos;s expertise and calm demeanor gave me
+                confidence during a very difficult time. His surgical skill and
+                attention to detail resulted in an outcome far better than I had
+                hoped for.
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center mr-4">
@@ -548,13 +546,13 @@ export default function GreenProfessionalTemplate() {
 
             <div className="bg-emerald-700 p-6 rounded-lg relative">
               <div className="absolute -top-4 left-6 text-emerald-300 text-5xl">
-                "
+                &quot;
               </div>
               <p className="text-emerald-100 italic mt-4 mb-6">
                 After suffering from debilitating back pain for years, Dr.
-                Richardson's minimally invasive procedure changed my life. His
-                conservative approach and surgical precision resulted in minimal
-                recovery time.
+                Richardson&apos;s minimally invasive procedure changed my life.
+                His conservative approach and surgical precision resulted in
+                minimal recovery time.
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center mr-4">
@@ -571,7 +569,7 @@ export default function GreenProfessionalTemplate() {
 
             <div className="bg-emerald-700 p-6 rounded-lg relative">
               <div className="absolute -top-4 left-6 text-emerald-300 text-5xl">
-                "
+                &quot;
               </div>
               <p className="text-emerald-100 italic mt-4 mb-6">
                 The deep brain stimulation procedure Dr. Richardson performed
@@ -586,7 +584,7 @@ export default function GreenProfessionalTemplate() {
                 <div>
                   <p className="font-semibold">Robert Johnson</p>
                   <p className="text-emerald-200 text-sm">
-                    DBS for Parkinson's
+                    DBS for Parkinson&apos;s
                   </p>
                 </div>
               </div>

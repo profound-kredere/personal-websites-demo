@@ -56,9 +56,7 @@ export default function MFDTemplate() {
       <header className="sticky top-0 z-10 bg-gray-900/90 backdrop-blur-sm border-b border-gray-800">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-teal-400">
-              Aman Gupta
-            </h1>
+            <h1 className="text-2xl font-bold text-teal-400">Aman Gupta</h1>
           </div>
           <nav className="hidden md:block">
             <ul className="flex space-x-8">
@@ -123,147 +121,258 @@ export default function MFDTemplate() {
         </div>
       </header>
 
-{/* Hero Section with Professional Image - Dark Theme */}
-<section className="py-5 bg-gradient-to-r from-gray-900 to-teal-900">
-  <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
-    <div className="md:w-1/2 mb-10 md:mb-0">
-      <div className="mb-4">
-        <span className="bg-teal-900/60 text-teal-300 text-sm font-medium px-4 py-1.5 rounded-full">
-          AMFI Registered Mutual Fund Distributor | ARN-21328
-        </span>
-      </div>
-      <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-        Building Wealth Through <span className="text-teal-400">Disciplined Investing</span>
-      </h1>
-      <p className="text-xl text-gray-300 mb-8">
-        Personalized mutual fund investment strategies tailored to your financial goals. 
-        Let's create a secure financial future together.
-      </p>
-      <div className="flex space-x-4">
-        <button className="px-6 py-3 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition">
-          Start Investing
-        </button>
-        <button className="px-6 py-3 border border-teal-600 text-teal-400 rounded-md hover:bg-teal-900/50 transition">
-          Free Consultation
-        </button>
-      </div>
-      
-      {/* Key benefits quick highlights */}
-      <div className="mt-10 grid grid-cols-2 gap-4">
-        <div className="flex items-center">
-          <div className="flex-shrink-0 bg-teal-900/80 p-2 rounded-full shadow-sm">
-            <svg className="w-5 h-5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          </div>
-          <p className="ml-3 text-sm text-gray-300">Personalized strategy</p>
-        </div>
-        <div className="flex items-center">
-          <div className="flex-shrink-0 bg-teal-900/80 p-2 rounded-full shadow-sm">
-            <svg className="w-5 h-5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          </div>
-          <p className="ml-3 text-sm text-gray-300">Zero additional fees</p>
-        </div>
-        <div className="flex items-center">
-          <div className="flex-shrink-0 bg-teal-900/80 p-2 rounded-full shadow-sm">
-            <svg className="w-5 h-5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          </div>
-          <p className="ml-3 text-sm text-gray-300">Goal-based planning</p>
-        </div>
-        <div className="flex items-center">
-          <div className="flex-shrink-0 bg-teal-900/80 p-2 rounded-full shadow-sm">
-            <svg className="w-5 h-5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          </div>
-          <p className="ml-3 text-sm text-gray-300">Regular portfolio reviews</p>
-        </div>
-      </div>
-    </div>
-    
-    <div className="md:w-1/2 relative">
-      {/* Professional image in card with dark theme */}
-      <div className="bg-gray-800 p-6 rounded-3xl shadow-xl relative md:ml-12 border border-gray-700">
-        <div className="absolute top-0 right-0 bg-teal-400 text-gray-800 rounded-full p-2 transform translate-x-1/4 -translate-y-1/4">
-          <svg
-            className="w-5 h-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-        </div>
-        
-        {/* Professional image */}
-        <div className="rounded-xl overflow-hidden shadow-lg">
-          <img
-            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&h=800&auto=format&fit=crop"
-            alt="Financial Advisor in a professional suit"
-            className="w-full h-auto object-cover"
-          />
-        </div>
-        
-        {/* Professional credentials with dark theme */}
-        <div className="mt-6 bg-gray-900/50 rounded-xl p-4 border border-gray-700">
-          <div className="flex items-center">
-            <div className="flex-shrink-0 bg-teal-600 p-2 rounded-full mr-4">
-              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-              </svg>
+      {/* Hero Section with Professional Image - Dark Theme */}
+      <section className="py-5 bg-gradient-to-r from-gray-900 to-teal-900">
+        <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
+          <div className="md:w-1/2 mb-10 md:mb-0">
+            <div className="mb-4">
+              <span className="bg-teal-900/60 text-teal-300 text-sm font-medium px-4 py-1.5 rounded-full">
+                AMFI Registered Mutual Fund Distributor | ARN-21328
+              </span>
             </div>
-            <div>
-              <h3 className="text-lg font-bold text-white">Aman Gupta</h3>
-              <p className="text-teal-400">Mutual Fund Distributor</p>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              Building Wealth Through{" "}
+              <span className="text-teal-400">Disciplined Investing</span>
+            </h1>
+            <p className="text-xl text-gray-300 mb-8">
+              Personalized mutual fund investment strategies tailored to your
+              financial goals. Let&apos;s create a secure financial future
+              together.
+            </p>
+            <div className="flex space-x-4">
+              <button className="px-6 py-3 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition">
+                Start Investing
+              </button>
+              <button className="px-6 py-3 border border-teal-600 text-teal-400 rounded-md hover:bg-teal-900/50 transition">
+                Free Consultation
+              </button>
+            </div>
+
+            {/* Key benefits quick highlights */}
+            <div className="mt-10 grid grid-cols-2 gap-4">
+              <div className="flex items-center">
+                <div className="flex-shrink-0 bg-teal-900/80 p-2 rounded-full shadow-sm">
+                  <svg
+                    className="w-5 h-5 text-teal-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <p className="ml-3 text-sm text-gray-300">
+                  Personalized strategy
+                </p>
+              </div>
+              <div className="flex items-center">
+                <div className="flex-shrink-0 bg-teal-900/80 p-2 rounded-full shadow-sm">
+                  <svg
+                    className="w-5 h-5 text-teal-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <p className="ml-3 text-sm text-gray-300">
+                  Zero additional fees
+                </p>
+              </div>
+              <div className="flex items-center">
+                <div className="flex-shrink-0 bg-teal-900/80 p-2 rounded-full shadow-sm">
+                  <svg
+                    className="w-5 h-5 text-teal-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <p className="ml-3 text-sm text-gray-300">
+                  Goal-based planning
+                </p>
+              </div>
+              <div className="flex items-center">
+                <div className="flex-shrink-0 bg-teal-900/80 p-2 rounded-full shadow-sm">
+                  <svg
+                    className="w-5 h-5 text-teal-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <p className="ml-3 text-sm text-gray-300">
+                  Regular portfolio reviews
+                </p>
+              </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 mt-4">
-            <div className="flex items-center">
-              <svg className="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <p className="text-sm text-gray-300">12+ Years Experience</p>
+          <div className="md:w-1/2 relative">
+            {/* Professional image in card with dark theme */}
+            <div className="bg-gray-800 p-6 rounded-3xl shadow-xl relative md:ml-12 border border-gray-700">
+              <div className="absolute top-0 right-0 bg-teal-400 text-gray-800 rounded-full p-2 transform translate-x-1/4 -translate-y-1/4">
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+
+              {/* Professional image */}
+              <div className="rounded-xl overflow-hidden shadow-lg">
+                <img
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&h=800&auto=format&fit=crop"
+                  alt="Financial Advisor in a professional suit"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+
+              {/* Professional credentials with dark theme */}
+              <div className="mt-6 bg-gray-900/50 rounded-xl p-4 border border-gray-700">
+                <div className="flex items-center">
+                  <div className="flex-shrink-0 bg-teal-600 p-2 rounded-full mr-4">
+                    <svg
+                      className="w-6 h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-white">Aman Gupta</h3>
+                    <p className="text-teal-400">Mutual Fund Distributor</p>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-2 gap-4 mt-4">
+                  <div className="flex items-center">
+                    <svg
+                      className="w-5 h-5 text-teal-400 mr-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    <p className="text-sm text-gray-300">
+                      12+ Years Experience
+                    </p>
+                  </div>
+                  <div className="flex items-center">
+                    <svg
+                      className="w-5 h-5 text-teal-400 mr-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                      />
+                    </svg>
+                    <p className="text-sm text-gray-300">300+ Happy Clients</p>
+                  </div>
+                  <div className="flex items-center">
+                    <svg
+                      className="w-5 h-5 text-teal-400 mr-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                      />
+                    </svg>
+                    <p className="text-sm text-gray-300">AMFI Certified</p>
+                  </div>
+                  <div className="flex items-center">
+                    <svg
+                      className="w-5 h-5 text-teal-400 mr-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    <p className="text-sm text-gray-300">₹75+ Cr. AUM</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="flex items-center">
-              <svg className="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-              </svg>
-              <p className="text-sm text-gray-300">300+ Happy Clients</p>
-            </div>
-            <div className="flex items-center">
-              <svg className="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-              </svg>
-              <p className="text-sm text-gray-300">AMFI Certified</p>
-            </div>
-            <div className="flex items-center">
-              <svg className="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <p className="text-sm text-gray-300">₹75+ Cr. AUM</p>
-            </div>
+
+            {/* Decorative elements */}
+            <div className="absolute top-1/2 left-0 transform -translate-y-1/2 w-64 h-64 bg-teal-800/40 rounded-full -z-10 opacity-60 blur-xl"></div>
+            <div className="absolute bottom-0 right-0 w-40 h-40 bg-teal-700/40 rounded-full -z-10 opacity-70 blur-lg"></div>
+            <div className="absolute top-0 right-1/4 w-20 h-20 bg-teal-900/30 rounded-full -z-10 opacity-60 blur-md"></div>
           </div>
         </div>
-      </div>
-
-      {/* Decorative elements */}
-      <div className="absolute top-1/2 left-0 transform -translate-y-1/2 w-64 h-64 bg-teal-800/40 rounded-full -z-10 opacity-60 blur-xl"></div>
-      <div className="absolute bottom-0 right-0 w-40 h-40 bg-teal-700/40 rounded-full -z-10 opacity-70 blur-lg"></div>
-      <div className="absolute top-0 right-1/4 w-20 h-20 bg-teal-900/30 rounded-full -z-10 opacity-60 blur-md"></div>
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* About Section */}
       <section id="about" className="py-16">
@@ -274,19 +383,25 @@ export default function MFDTemplate() {
           <div className="flex flex-col md:flex-row gap-10">
             <div className="md:w-1/2">
               <p className="text-lg text-gray-300 mb-6">
-                With over 12 years of experience in the mutual fund industry, Aman Gupta has established 
-                himself as a trusted financial advisor helping individuals and families achieve their 
-                financial goals through disciplined investing and personalized financial planning.
+                With over 12 years of experience in the mutual fund industry,
+                Aman Gupta has established himself as a trusted financial
+                advisor helping individuals and families achieve their financial
+                goals through disciplined investing and personalized financial
+                planning.
               </p>
               <p className="text-lg text-gray-300 mb-6">
-                As an AMFI Registered Mutual Fund Distributor, Aman brings his expertise in portfolio 
-                construction, asset allocation, and risk management to provide clients with investment 
-                solutions that align with their financial objectives, risk tolerance, and time horizon.
+                As an AMFI Registered Mutual Fund Distributor, Aman brings his
+                expertise in portfolio construction, asset allocation, and risk
+                management to provide clients with investment solutions that
+                align with their financial objectives, risk tolerance, and time
+                horizon.
               </p>
               <p className="text-lg text-gray-300">
-                Aman's client-centric approach focuses on education and transparency, ensuring that 
-                investors understand their investment strategy and make informed decisions. He takes 
-                pride in building long-term relationships and seeing his clients achieve financial success.
+                Aman&apos;s client-centric approach focuses on education and
+                transparency, ensuring that investors understand their
+                investment strategy and make informed decisions. He takes pride
+                in building long-term relationships and seeing his clients
+                achieve financial success.
               </p>
             </div>
             <div className="md:w-1/2 space-y-6">
@@ -297,7 +412,9 @@ export default function MFDTemplate() {
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="text-teal-500 mr-2">•</span>
-                    <span>AMFI Registered Mutual Fund Distributor (ARN-21328)</span>
+                    <span>
+                      AMFI Registered Mutual Fund Distributor (ARN-21328)
+                    </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-teal-500 mr-2">•</span>
@@ -334,387 +451,396 @@ export default function MFDTemplate() {
       </section>
 
       {/* Services Section with shadcn Card Style - Turquoise Color Scheme */}
-<section id="services" className="py-16 bg-gray-800">
-  <div className="container mx-auto px-4">
-    <h2 className="text-3xl font-bold text-center mb-12 text-white">
-      Investment Services
-    </h2>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {/* SIP Card */}
-      <div className="rounded-lg border border-gray-700 bg-gray-800/50 shadow-sm hover:shadow-md transition-shadow duration-200">
-        <div className="flex flex-col space-y-1.5 p-6">
-          <div className="flex items-center gap-2">
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal-900/20 text-teal-400">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <circle cx="12" cy="12" r="10" />
-                <path d="M12 6v6l4 2" />
-              </svg>
-            </span>
-            <h3 className="text-lg font-semibold text-white">
-              Systematic Investment Plans (SIPs)
-            </h3>
-          </div>
-        </div>
-        <div className="p-6 pt-0 text-gray-300">
-          <p>
-            Build wealth gradually through disciplined investing with SIPs starting from just ₹1,000 per month.
-            Perfect for long-term financial goals like retirement planning.
-          </p>
-        </div>
-        <div className="flex items-center p-6 pt-0">
-          <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-teal-700 text-gray-100 hover:bg-teal-700/90 h-10 px-4 py-2">
-            Learn More
-            <svg
-              xmlns="http://www.w3.org/2000/svg" 
-              className="h-4 w-4 ml-2"
-              width="24" 
-              height="24" 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="currentColor" 
-              strokeWidth="2" 
-              strokeLinecap="round" 
-              strokeLinejoin="round"
-            >
-              <path d="M5 12h14"/>
-              <path d="m12 5 7 7-7 7"/>
-            </svg>
-          </button>
-        </div>
-      </div>
+      <section id="services" className="py-16 bg-gray-800">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12 text-white">
+            Investment Services
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* SIP Card */}
+            <div className="rounded-lg border border-gray-700 bg-gray-800/50 shadow-sm hover:shadow-md transition-shadow duration-200">
+              <div className="flex flex-col space-y-1.5 p-6">
+                <div className="flex items-center gap-2">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal-900/20 text-teal-400">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M12 6v6l4 2" />
+                    </svg>
+                  </span>
+                  <h3 className="text-lg font-semibold text-white">
+                    Systematic Investment Plans (SIPs)
+                  </h3>
+                </div>
+              </div>
+              <div className="p-6 pt-0 text-gray-300">
+                <p>
+                  Build wealth gradually through disciplined investing with SIPs
+                  starting from just ₹1,000 per month. Perfect for long-term
+                  financial goals like retirement planning.
+                </p>
+              </div>
+              <div className="flex items-center p-6 pt-0">
+                <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-teal-700 text-gray-100 hover:bg-teal-700/90 h-10 px-4 py-2">
+                  Learn More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 ml-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
 
-      {/* Goal-Based Investing Card */}
-      <div className="rounded-lg border border-gray-700 bg-gray-800/50 shadow-sm hover:shadow-md transition-shadow duration-200">
-        <div className="flex flex-col space-y-1.5 p-6">
-          <div className="flex items-center gap-2">
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal-900/20 text-teal-400">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M12 2v4"/>
-                <path d="M12 18v4"/>
-                <path d="m4.93 4.93 2.83 2.83"/>
-                <path d="m16.24 16.24 2.83 2.83"/>
-                <path d="M2 12h4"/>
-                <path d="M18 12h4"/>
-                <path d="m4.93 19.07 2.83-2.83"/>
-                <path d="m16.24 7.76 2.83-2.83"/>
-              </svg>
-            </span>
-            <h3 className="text-lg font-semibold text-white">
-              Goal-Based Investing
-            </h3>
-          </div>
-        </div>
-        <div className="p-6 pt-0 text-gray-300">
-          <p>
-            Customized investment strategies designed specifically for your life goals: 
-            children's education, home purchase, retirement, or creating wealth.
-          </p>
-        </div>
-        <div className="flex items-center p-6 pt-0">
-          <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-teal-700 text-gray-100 hover:bg-teal-700/90 h-10 px-4 py-2">
-            Learn More
-            <svg
-              xmlns="http://www.w3.org/2000/svg" 
-              className="h-4 w-4 ml-2"
-              width="24" 
-              height="24" 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="currentColor" 
-              strokeWidth="2" 
-              strokeLinecap="round" 
-              strokeLinejoin="round"
-            >
-              <path d="M5 12h14"/>
-              <path d="m12 5 7 7-7 7"/>
-            </svg>
-          </button>
-        </div>
-      </div>
+            {/* Goal-Based Investing Card */}
+            <div className="rounded-lg border border-gray-700 bg-gray-800/50 shadow-sm hover:shadow-md transition-shadow duration-200">
+              <div className="flex flex-col space-y-1.5 p-6">
+                <div className="flex items-center gap-2">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal-900/20 text-teal-400">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M12 2v4" />
+                      <path d="M12 18v4" />
+                      <path d="m4.93 4.93 2.83 2.83" />
+                      <path d="m16.24 16.24 2.83 2.83" />
+                      <path d="M2 12h4" />
+                      <path d="M18 12h4" />
+                      <path d="m4.93 19.07 2.83-2.83" />
+                      <path d="m16.24 7.76 2.83-2.83" />
+                    </svg>
+                  </span>
+                  <h3 className="text-lg font-semibold text-white">
+                    Goal-Based Investing
+                  </h3>
+                </div>
+              </div>
+              <div className="p-6 pt-0 text-gray-300">
+                <p>
+                  Customized investment strategies designed specifically for
+                  your life goals: children&apos;s education, home purchase,
+                  retirement, or creating wealth.
+                </p>
+              </div>
+              <div className="flex items-center p-6 pt-0">
+                <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-teal-700 text-gray-100 hover:bg-teal-700/90 h-10 px-4 py-2">
+                  Learn More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 ml-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
 
-      {/* Portfolio Management Card */}
-      <div className="rounded-lg border border-gray-700 bg-gray-800/50 shadow-sm hover:shadow-md transition-shadow duration-200">
-        <div className="flex flex-col space-y-1.5 p-6">
-          <div className="flex items-center gap-2">
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal-900/20 text-teal-400">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/>
-                <path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/>
-                <path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/>
-              </svg>
-            </span>
-            <h3 className="text-lg font-semibold text-white">
-              Portfolio Management
-            </h3>
-          </div>
-        </div>
-        <div className="p-6 pt-0 text-gray-300">
-          <p>
-            Regular portfolio monitoring, rebalancing, and performance reviews to ensure 
-            your investments stay aligned with your financial objectives.
-          </p>
-        </div>
-        <div className="flex items-center p-6 pt-0">
-          <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-teal-700 text-gray-100 hover:bg-teal-700/90 h-10 px-4 py-2">
-            Learn More
-            <svg
-              xmlns="http://www.w3.org/2000/svg" 
-              className="h-4 w-4 ml-2"
-              width="24" 
-              height="24" 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="currentColor" 
-              strokeWidth="2" 
-              strokeLinecap="round" 
-              strokeLinejoin="round"
-            >
-              <path d="M5 12h14"/>
-              <path d="m12 5 7 7-7 7"/>
-            </svg>
-          </button>
-        </div>
-      </div>
+            {/* Portfolio Management Card */}
+            <div className="rounded-lg border border-gray-700 bg-gray-800/50 shadow-sm hover:shadow-md transition-shadow duration-200">
+              <div className="flex flex-col space-y-1.5 p-6">
+                <div className="flex items-center gap-2">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal-900/20 text-teal-400">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4" />
+                      <path d="M3 5v14a2 2 0 0 0 2 2h16v-5" />
+                      <path d="M18 12a2 2 0 0 0 0 4h4v-4Z" />
+                    </svg>
+                  </span>
+                  <h3 className="text-lg font-semibold text-white">
+                    Portfolio Management
+                  </h3>
+                </div>
+              </div>
+              <div className="p-6 pt-0 text-gray-300">
+                <p>
+                  Regular portfolio monitoring, rebalancing, and performance
+                  reviews to ensure your investments stay aligned with your
+                  financial objectives.
+                </p>
+              </div>
+              <div className="flex items-center p-6 pt-0">
+                <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-teal-700 text-gray-100 hover:bg-teal-700/90 h-10 px-4 py-2">
+                  Learn More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 ml-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
 
-      {/* Tax Planning Card */}
-      <div className="rounded-lg border border-gray-700 bg-gray-800/50 shadow-sm hover:shadow-md transition-shadow duration-200">
-        <div className="flex flex-col space-y-1.5 p-6">
-          <div className="flex items-center gap-2">
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal-900/20 text-teal-400">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <rect width="20" height="14" x="2" y="7" rx="2" ry="2"/>
-                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-              </svg>
-            </span>
-            <h3 className="text-lg font-semibold text-white">
-              Tax Planning
-            </h3>
-          </div>
-        </div>
-        <div className="p-6 pt-0 text-gray-300">
-          <p>
-            Strategic investment planning to help you save taxes under Section 80C and other 
-            provisions while building a robust portfolio for long-term wealth creation.
-          </p>
-        </div>
-        <div className="flex items-center p-6 pt-0">
-          <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-teal-700 text-gray-100 hover:bg-teal-700/90 h-10 px-4 py-2">
-            Learn More
-            <svg
-              xmlns="http://www.w3.org/2000/svg" 
-              className="h-4 w-4 ml-2"
-              width="24" 
-              height="24" 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="currentColor" 
-              strokeWidth="2" 
-              strokeLinecap="round" 
-              strokeLinejoin="round"
-            >
-              <path d="M5 12h14"/>
-              <path d="m12 5 7 7-7 7"/>
-            </svg>
-          </button>
-        </div>
-      </div>
+            {/* Tax Planning Card */}
+            <div className="rounded-lg border border-gray-700 bg-gray-800/50 shadow-sm hover:shadow-md transition-shadow duration-200">
+              <div className="flex flex-col space-y-1.5 p-6">
+                <div className="flex items-center gap-2">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal-900/20 text-teal-400">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <rect width="20" height="14" x="2" y="7" rx="2" ry="2" />
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                    </svg>
+                  </span>
+                  <h3 className="text-lg font-semibold text-white">
+                    Tax Planning
+                  </h3>
+                </div>
+              </div>
+              <div className="p-6 pt-0 text-gray-300">
+                <p>
+                  Strategic investment planning to help you save taxes under
+                  Section 80C and other provisions while building a robust
+                  portfolio for long-term wealth creation.
+                </p>
+              </div>
+              <div className="flex items-center p-6 pt-0">
+                <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-teal-700 text-gray-100 hover:bg-teal-700/90 h-10 px-4 py-2">
+                  Learn More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 ml-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
 
-      {/* Financial Education Card */}
-      <div className="rounded-lg border border-gray-700 bg-gray-800/50 shadow-sm hover:shadow-md transition-shadow duration-200">
-        <div className="flex flex-col space-y-1.5 p-6">
-          <div className="flex items-center gap-2">
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal-900/20 text-teal-400">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
-              </svg>
-            </span>
-            <h3 className="text-lg font-semibold text-white">
-              Financial Education
-            </h3>
-          </div>
-        </div>
-        <div className="p-6 pt-0 text-gray-300">
-          <p>
-            Regular workshops and personalized sessions to help you understand market dynamics,
-            investment fundamentals, and make informed financial decisions.
-          </p>
-        </div>
-        <div className="flex items-center p-6 pt-0">
-          <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-teal-700 text-gray-100 hover:bg-teal-700/90 h-10 px-4 py-2">
-            Learn More
-            <svg
-              xmlns="http://www.w3.org/2000/svg" 
-              className="h-4 w-4 ml-2"
-              width="24" 
-              height="24" 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="currentColor" 
-              strokeWidth="2" 
-              strokeLinecap="round" 
-              strokeLinejoin="round"
-            >
-              <path d="M5 12h14"/>
-              <path d="m12 5 7 7-7 7"/>
-            </svg>
-          </button>
-        </div>
-      </div>
+            {/* Financial Education Card */}
+            <div className="rounded-lg border border-gray-700 bg-gray-800/50 shadow-sm hover:shadow-md transition-shadow duration-200">
+              <div className="flex flex-col space-y-1.5 p-6">
+                <div className="flex items-center gap-2">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal-900/20 text-teal-400">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+                    </svg>
+                  </span>
+                  <h3 className="text-lg font-semibold text-white">
+                    Financial Education
+                  </h3>
+                </div>
+              </div>
+              <div className="p-6 pt-0 text-gray-300">
+                <p>
+                  Regular workshops and personalized sessions to help you
+                  understand market dynamics, investment fundamentals, and make
+                  informed financial decisions.
+                </p>
+              </div>
+              <div className="flex items-center p-6 pt-0">
+                <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-teal-700 text-gray-100 hover:bg-teal-700/90 h-10 px-4 py-2">
+                  Learn More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 ml-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
 
-      {/* Retirement Planning Card */}
-      <div className="rounded-lg border border-gray-700 bg-gray-800/50 shadow-sm hover:shadow-md transition-shadow duration-200">
-        <div className="flex flex-col space-y-1.5 p-6">
-          <div className="flex items-center gap-2">
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal-900/20 text-teal-400">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/>
-                <path d="M13 5v2"/>
-                <path d="M13 17v2"/>
-                <path d="M13 11v2"/>
-              </svg>
-            </span>
-            <h3 className="text-lg font-semibold text-white">
-              Retirement Planning
-            </h3>
+            {/* Retirement Planning Card */}
+            <div className="rounded-lg border border-gray-700 bg-gray-800/50 shadow-sm hover:shadow-md transition-shadow duration-200">
+              <div className="flex flex-col space-y-1.5 p-6">
+                <div className="flex items-center gap-2">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-teal-900/20 text-teal-400">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
+                      <path d="M13 5v2" />
+                      <path d="M13 17v2" />
+                      <path d="M13 11v2" />
+                    </svg>
+                  </span>
+                  <h3 className="text-lg font-semibold text-white">
+                    Retirement Planning
+                  </h3>
+                </div>
+              </div>
+              <div className="p-6 pt-0 text-gray-300">
+                <p>
+                  Comprehensive retirement solutions to help you build a corpus
+                  that ensures financial independence and maintains your
+                  lifestyle after retirement.
+                </p>
+              </div>
+              <div className="flex items-center p-6 pt-0">
+                <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-teal-700 text-gray-100 hover:bg-teal-700/90 h-10 px-4 py-2">
+                  Learn More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 ml-2"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="m12 5 7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="p-6 pt-0 text-gray-300">
-          <p>
-            Comprehensive retirement solutions to help you build a corpus that ensures 
-            financial independence and maintains your lifestyle after retirement.
-          </p>
-        </div>
-        <div className="flex items-center p-6 pt-0">
-          <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-teal-700 text-gray-100 hover:bg-teal-700/90 h-10 px-4 py-2">
-            Learn More
-            <svg
-              xmlns="http://www.w3.org/2000/svg" 
-              className="h-4 w-4 ml-2"
-              width="24" 
-              height="24" 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="currentColor" 
-              strokeWidth="2" 
-              strokeLinecap="round" 
-              strokeLinejoin="round"
-            >
-              <path d="M5 12h14"/>
-              <path d="m12 5 7 7-7 7"/>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* Investment Approach - Horizontal Layout */}
-<section id="investment-approach" className="py-16">
-  <div className="container mx-auto px-4">
-    <h2 className="text-3xl font-bold text-center mb-12 text-white">
-      My Investment Philosophy
-    </h2>
-    
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-      {/* Philosophy 1 */}
-      <div className="bg-gray-800 rounded-lg p-6 border-t-4 border-teal-500 shadow-md">
-        <h3 className="text-xl font-semibold text-white mb-3">
-          Long-Term Focus
-        </h3>
-        <p className="text-gray-400">
-          I believe wealth creation happens through patient, long-term investing, not through market timing or speculation.
-        </p>
-      </div>
-      
-      {/* Philosophy 2 */}
-      <div className="bg-gray-800 rounded-lg p-6 border-t-4 border-teal-500 shadow-md">
-        <h3 className="text-xl font-semibold text-white mb-3">
-          Disciplined Approach
-        </h3>
-        <p className="text-gray-400">
-          Consistent investing through SIPs to benefit from rupee-cost averaging and the power of compounding.
-        </p>
-      </div>
-      
-      {/* Philosophy 3 */}
-      <div className="bg-gray-800 rounded-lg p-6 border-t-4 border-teal-500 shadow-md">
-        <h3 className="text-xl font-semibold text-white mb-3">
-          Diversification
-        </h3>
-        <p className="text-gray-400">
-          Spreading investments across asset classes and fund categories to manage risk and enhance returns.
-        </p>
-      </div>
-    </div>
-    
-    <div className="mt-10 text-center">
-      <button className="px-6 py-3 border border-teal-600 text-teal-400 rounded-md hover:bg-teal-900/50 transition">
-        Learn More About My Approach
-      </button>
-    </div>
-  </div>
-</section>
+      <section id="investment-approach" className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12 text-white">
+            My Investment Philosophy
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Philosophy 1 */}
+            <div className="bg-gray-800 rounded-lg p-6 border-t-4 border-teal-500 shadow-md">
+              <h3 className="text-xl font-semibold text-white mb-3">
+                Long-Term Focus
+              </h3>
+              <p className="text-gray-400">
+                I believe wealth creation happens through patient, long-term
+                investing, not through market timing or speculation.
+              </p>
+            </div>
+
+            {/* Philosophy 2 */}
+            <div className="bg-gray-800 rounded-lg p-6 border-t-4 border-teal-500 shadow-md">
+              <h3 className="text-xl font-semibold text-white mb-3">
+                Disciplined Approach
+              </h3>
+              <p className="text-gray-400">
+                Consistent investing through SIPs to benefit from rupee-cost
+                averaging and the power of compounding.
+              </p>
+            </div>
+
+            {/* Philosophy 3 */}
+            <div className="bg-gray-800 rounded-lg p-6 border-t-4 border-teal-500 shadow-md">
+              <h3 className="text-xl font-semibold text-white mb-3">
+                Diversification
+              </h3>
+              <p className="text-gray-400">
+                Spreading investments across asset classes and fund categories
+                to manage risk and enhance returns.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-10 text-center">
+            <button className="px-6 py-3 border border-teal-600 text-teal-400 rounded-md hover:bg-teal-900/50 transition">
+              Learn More About My Approach
+            </button>
+          </div>
+        </div>
+      </section>
 
       {/* Performance Section */}
       <section id="performance" className="py-16 bg-gray-800">
@@ -728,8 +854,8 @@ export default function MFDTemplate() {
                 Equity Portfolio
               </h3>
               <p className="text-gray-300 mb-4">
-                Recommended equity mutual funds have delivered 15.8% CAGR over the last 5 years, 
-                outperforming the benchmark indices by 3.2%.
+                Recommended equity mutual funds have delivered 15.8% CAGR over
+                the last 5 years, outperforming the benchmark indices by 3.2%.
               </p>
               <div className="flex justify-between items-center">
                 <span className="text-teal-400">Large & Mid Cap</span>
@@ -741,8 +867,9 @@ export default function MFDTemplate() {
                 Balanced Portfolio
               </h3>
               <p className="text-gray-300 mb-4">
-                Balanced portfolio recommendations (60% equity, 40% debt) have achieved 12.5% CAGR 
-                over 5 years with significantly lower volatility.
+                Balanced portfolio recommendations (60% equity, 40% debt) have
+                achieved 12.5% CAGR over 5 years with significantly lower
+                volatility.
               </p>
               <div className="flex justify-between items-center">
                 <span className="text-teal-400">Balanced Allocation</span>
@@ -750,19 +877,17 @@ export default function MFDTemplate() {
               </div>
             </div>
           </div>
-
-         
         </div>
       </section>
 
       {/* Testimonials Section */}
-     <AnimatedTestimonials2 testimonials={testimonials} autoplay={true} />
+      <AnimatedTestimonials2 testimonials={testimonials} autoplay={true} />
 
       {/* Contact Section */}
       <section id="contact" className="py-5 bg-gray-800/50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-white">
-            Let's Connect
+            Let&apos;s Connect
           </h2>
           <div className="flex flex-col md:flex-row gap-10">
             <div className="md:w-1/2">
@@ -848,9 +973,7 @@ export default function MFDTemplate() {
                     <h3 className="text-lg font-semibold text-white mb-1">
                       Email
                     </h3>
-                    <p className="text-gray-300">
-                      aman@wealthcreators.in
-                    </p>
+                    <p className="text-gray-300">aman@wealthcreators.in</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -908,7 +1031,7 @@ export default function MFDTemplate() {
                     Email
                   </label>
                   <input
-                   type="email"
+                    type="email"
                     id="email"
                     className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-teal-500"
                   />
@@ -938,7 +1061,7 @@ export default function MFDTemplate() {
                     className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-teal-500"
                   >
                     <option>Retirement Planning</option>
-                    <option>Children's Education</option>
+                    <option>Children&apos;s Education</option>
                     <option>Wealth Creation</option>
                     <option>Tax Saving</option>
                     <option>Home Purchase</option>
@@ -981,8 +1104,9 @@ export default function MFDTemplate() {
             Ready to Start Your Investment Journey?
           </h2>
           <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-            Take the first step towards financial freedom today. Schedule a free consultation to discuss 
-            your financial goals and create a personalized investment plan.
+            Take the first step towards financial freedom today. Schedule a free
+            consultation to discuss your financial goals and create a
+            personalized investment plan.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <button className="px-8 py-4 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition text-lg font-semibold">
@@ -1000,10 +1124,13 @@ export default function MFDTemplate() {
         <div className="container mx-auto px-4">
           <div className="text-center text-gray-400 text-sm">
             <p className="mb-2">
-              <span className="font-semibold">SEBI Registration:</span> ARN-21328 | <span className="font-semibold">Valid until:</span> 31/03/2026
+              <span className="font-semibold">SEBI Registration:</span>{" "}
+              ARN-21328 | <span className="font-semibold">Valid until:</span>{" "}
+              31/03/2026
             </p>
             <p>
-              Mutual Fund investments are subject to market risks. Please read all scheme related documents carefully before investing.
+              Mutual Fund investments are subject to market risks. Please read
+              all scheme related documents carefully before investing.
             </p>
           </div>
         </div>
@@ -1014,9 +1141,7 @@ export default function MFDTemplate() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
-              <h2 className="text-2xl font-bold text-teal-400">
-                Aman Gupta
-              </h2>
+              <h2 className="text-2xl font-bold text-teal-400">Aman Gupta</h2>
               <p className="mt-2 text-gray-300">
                 AMFI Registered Mutual Fund Distributor | Your Financial Partner
               </p>
@@ -1078,7 +1203,8 @@ export default function MFDTemplate() {
           </div>
           <hr className="my-6 border-gray-800" />
           <p className="text-center text-gray-400">
-            &copy; {new Date().getFullYear()} Aman Gupta, AMFI Registered Mutual Fund Distributor. All rights reserved.
+            &copy; {new Date().getFullYear()} Aman Gupta, AMFI Registered Mutual
+            Fund Distributor. All rights reserved.
           </p>
         </div>
       </footer>
