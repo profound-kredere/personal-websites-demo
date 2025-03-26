@@ -1,15 +1,14 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 type Testimonial = {
   quote: string;
   name: string;
   designation: string;
-  gender?: "male" | "female";  // Optional gender for appropriate image
-  seed?: string;               // Optional seed for consistent image
+  gender?: "male" | "female"; // Optional gender for appropriate image
+  seed?: string; // Optional seed for consistent image
 };
 
 export const AnimatedTestimonials = ({
@@ -48,11 +47,11 @@ export const AnimatedTestimonials = ({
   const getImageUrl = (testimonial: Testimonial, index: number) => {
     // Use the seed if provided, otherwise use name + index for consistency
     const seed = testimonial.seed || `${testimonial.name}-${index}`;
-    
+
     // Options for UIFaces - a professional headshot generator
     // We're using This Person Does Not Exist as a fallback
     // Both generate realistic, professional-looking headshots
-    
+
     if (testimonial.gender === "female") {
       return `https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=500&h=500&auto=format&fit=crop`;
     } else if (testimonial.gender === "male") {
@@ -65,11 +64,13 @@ export const AnimatedTestimonials = ({
         "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=500&h=500&auto=format&fit=crop",
         "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=500&h=500&auto=format&fit=crop",
         "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=500&h=500&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=500&h=500&auto=format&fit=crop"
+        "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=500&h=500&auto=format&fit=crop",
       ];
-      
+
       // Use a deterministic selection based on the seed
-      const seedNumber = seed.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
+      const seedNumber = seed
+        .split("")
+        .reduce((acc, char) => acc + char.charCodeAt(0), 0);
       return images[seedNumber % images.length];
     }
   };
@@ -82,7 +83,8 @@ export const AnimatedTestimonials = ({
             Client <span className="text-lime-500">Success</span> Stories
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Don't just take our word for it. See the impact our financial solutions have made for our clients.
+            Don&apos;t just take our word for it. See the impact our financial
+            solutions have made for our clients.
           </p>
         </div>
 
@@ -94,7 +96,7 @@ export const AnimatedTestimonials = ({
                 {/* Background decorative elements */}
                 <div className="absolute -top-6 -left-6 w-32 h-32 bg-lime-100 rounded-full opacity-70 z-0"></div>
                 <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-lime-200 rounded-full opacity-60 z-0"></div>
-                
+
                 <div className="absolute inset-0 shadow-2xl rounded-3xl overflow-hidden z-10">
                   <AnimatePresence>
                     {testimonials.map((testimonial, index) => (
@@ -138,7 +140,7 @@ export const AnimatedTestimonials = ({
                   </AnimatePresence>
                 </div>
               </div>
-              
+
               {/* Navigation dots */}
               <div className="mt-6 flex justify-center space-x-2">
                 {testimonials.map((_, index) => (
@@ -159,16 +161,16 @@ export const AnimatedTestimonials = ({
               <div className="bg-white rounded-3xl shadow-lg p-8 relative">
                 {/* Quote icon */}
                 <div className="absolute -top-5 -left-5 bg-lime-500 text-white p-3 rounded-full shadow-md">
-                  <svg 
-                    className="w-6 h-6" 
-                    fill="currentColor" 
-                    viewBox="0 0 24 24" 
+                  <svg
+                    className="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                   </svg>
                 </div>
-                
+
                 <motion.div
                   key={active}
                   initial={{
@@ -190,31 +192,33 @@ export const AnimatedTestimonials = ({
                   className="mt-6"
                 >
                   <motion.p className="text-xl text-gray-700 italic leading-relaxed">
-                    {testimonials[active].quote.split(" ").map((word, index) => (
-                      <motion.span
-                        key={index}
-                        initial={{
-                          filter: "blur(10px)",
-                          opacity: 0,
-                          y: 5,
-                        }}
-                        animate={{
-                          filter: "blur(0px)",
-                          opacity: 1,
-                          y: 0,
-                        }}
-                        transition={{
-                          duration: 0.2,
-                          ease: "easeInOut",
-                          delay: 0.02 * index,
-                        }}
-                        className="inline-block"
-                      >
-                        {word}&nbsp;
-                      </motion.span>
-                    ))}
+                    {testimonials[active].quote
+                      .split(" ")
+                      .map((word, index) => (
+                        <motion.span
+                          key={index}
+                          initial={{
+                            filter: "blur(10px)",
+                            opacity: 0,
+                            y: 5,
+                          }}
+                          animate={{
+                            filter: "blur(0px)",
+                            opacity: 1,
+                            y: 0,
+                          }}
+                          transition={{
+                            duration: 0.2,
+                            ease: "easeInOut",
+                            delay: 0.02 * index,
+                          }}
+                          className="inline-block"
+                        >
+                          {word}&nbsp;
+                        </motion.span>
+                      ))}
                   </motion.p>
-                  
+
                   <div className="mt-8 flex items-center border-t border-gray-100 pt-4">
                     <div className="flex-1">
                       <h3 className="text-xl font-bold text-gray-800">
@@ -224,15 +228,26 @@ export const AnimatedTestimonials = ({
                         {testimonials[active].designation}
                       </p>
                     </div>
-                    
+
                     <div className="flex space-x-3">
                       <button
                         onClick={handlePrev}
                         className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 text-gray-800 hover:bg-lime-100 transition-colors duration-300"
                         aria-label="Previous testimonial"
                       >
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                        <svg
+                          className="w-5 h-5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M15 19l-7-7 7-7"
+                          />
                         </svg>
                       </button>
                       <button
@@ -240,8 +255,19 @@ export const AnimatedTestimonials = ({
                         className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 text-gray-800 hover:bg-lime-100 transition-colors duration-300"
                         aria-label="Next testimonial"
                       >
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        <svg
+                          className="w-5 h-5"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M9 5l7 7-7 7"
+                          />
                         </svg>
                       </button>
                     </div>
